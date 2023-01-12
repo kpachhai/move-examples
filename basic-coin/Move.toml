@@ -1,0 +1,9 @@
+[package]
+name = "BasicCoin"
+version = "0.0.0"
+
+[addresses]
+NamedAddr = "0xCAFE"
+
+[dependencies]
+MoveStdlib = { git = "https://github.com/move-language/move.git", subdir="language/move-stdlib", rev = "469a6be033b394c8281305fc74879b14360c652c", addr_subst = { "std" = "0x1" } }
